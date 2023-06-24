@@ -99,6 +99,7 @@ export class EditProductComponent implements OnInit {
     description: any,
     category: any
   ) {
+    category = this.categories.find((obj:any) => obj.categoryName == this.Category).categoryId;
     let product = {
       productId: this.ID,
       name,
