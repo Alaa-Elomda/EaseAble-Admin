@@ -94,7 +94,7 @@ export class LoginComponent {
       this.logForm.get('email')?.valid
     ) {
       this.http
-        .post<any>('https://localhost:7032/api/Admin/Login', {
+        .post<any>('https://abilitysystem.azurewebsites.net/api/Admin/Login', {
           email,
           password,
         })
